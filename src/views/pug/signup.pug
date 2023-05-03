@@ -1,0 +1,34 @@
+extends ./layout/baseLogin.pug
+block content 
+
+    main(class="main-login")
+        div(class="contenedor-login")
+            h2(class="h2-login") Registrarse
+            form(action="/signup", method="post")
+                div(class="form-group")
+                    label(for="email") Email
+                    input(type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email" required)
+                div(class="form-group")
+                    label(for="name") Nombre
+                    input(type="user" class="form-control" id="name" name="name" placeholder="Ingrese su nombre" required)
+                div(class="form-group")
+                    label(for="lastname") Apellido
+                    input(type="user" class="form-control" id="lastname" name="lastname" placeholder="Ingrese su apellido" required)
+                div(class="form-group")
+                    label(for="password") Contraseña
+                    input(type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required)
+                div(class="form-group")
+                    label(for="pais") Pais
+                    input(class="form-control" id="pais" name="pais" placeholder="Ingrese nacionalidad" required)
+                div(class="form-group")
+                    label(for="edad") Edad
+                    input(type="number" class="form-control" id="edad" name="edad" placeholder="Ingrese su edad" required)
+                div(class="form-group")
+                    label(for="prefix") Celular
+                    div(class='flex-container')
+                        input(type="tel" class="form-control" id="prefix" name="prefix" placeholder="+51"  required)
+                        input(type="tel" class="form-control" id="number" name="number" placeholder="940897237" required)
+                div(class="form-group")
+                    button(type="submit" class="btn btn-primary btn-block" id="btn-login") Crear cuenta 
+                div(class="form-group a-login")
+                    a(href="/login" class="a-login") Ya tienes una cuenta?

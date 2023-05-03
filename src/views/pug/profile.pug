@@ -1,0 +1,26 @@
+extends ./layout/base.pug
+block content 
+
+    main(class="container-profile-main")
+        div(class="contenedor")
+            p(class="title") Mi perfil
+            
+        div(class="contenedor-profile")
+            div(class='perfil-1')
+                img(class="perfi-img" src=`${user.img}`)
+                p(class="perfi-letra")= `Nombre: ${user.name}`
+                p(class="perfi-letra")= `Apellido: ${user.lastname}`
+                p(class="perfi-letra")= `Email: ${user.email}`
+                p(class="perfi-letra")= `Pais: ${user.country}`
+                p(class="perfi-letra")= `Telefono: +${user.number}`
+                
+
+        form(action='/profile' class="input-avatar" enctype='multipart/form-data' method='post')
+            label(for="avatar") Avatar
+            input.form-control-file(type='file' name='avatar' id="avatar")
+            input.form-control-file(type='submit' value='Enviar')
+
+        a(href="/logout" class="button-cerrar") Cerrar sesion
+
+    script(src="/static/js/cart.js")
+    script(src="/static/js/inicializarBadget.js")

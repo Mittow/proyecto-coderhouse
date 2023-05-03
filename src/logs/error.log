@@ -1,0 +1,24 @@
+2023-05-02T17:21:56.655Z [error] Error al registrar el usuario: Error: Missing credentials for "PLAIN"
+2023-05-02T17:21:56.657Z [error] Error al registrar el usuario: Error: Missing credentials for "PLAIN"
+2023-05-02T17:23:33.515Z [error] El email franco_3007199@hotmail.com ya esta registrado!
+2023-05-02T17:23:33.515Z [error] El email franco_3007199@hotmail.com ya esta registrado!
+2023-05-02T17:23:48.697Z [warn] El password no es validad!
+2023-05-02T17:25:51.195Z [warn] El password no es validad!
+2023-05-02T17:40:13.579Z [error] Error al registrar el usuario: Error: Missing credentials for "PLAIN"
+2023-05-02T17:40:13.581Z [error] Error al registrar el usuario: Error: Missing credentials for "PLAIN"
+2023-05-02T17:40:27.046Z [error] El email franco_3007199@hotmail.com ya esta registrado!
+2023-05-02T17:40:27.047Z [error] El email franco_3007199@hotmail.com ya esta registrado!
+2023-05-02T18:27:09.522Z [error] Error al enviar mensaje y emailError: Twilio could not find a Channel with the specified From address
+2023-05-02T18:27:09.525Z [error] Error al enviar mensaje y emailError: Twilio could not find a Channel with the specified From address
+2023-05-02T21:10:47.037Z [error] Error al registrar el usuario: Error: Missing credentials for "PLAIN"
+2023-05-02T21:10:47.039Z [error] Error al registrar el usuario: Error: Missing credentials for "PLAIN"
+2023-05-02T21:17:29.551Z [error] Error al registrar el usuario: Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials a17-20020aca1a11000000b0038e6c01a81dsm12678290oia.17 - gsmtp
+2023-05-02T21:17:29.552Z [error] Error al registrar el usuario: Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials a17-20020aca1a11000000b0038e6c01a81dsm12678290oia.17 - gsmtp
+2023-05-02T21:19:39.593Z [error] Error al registrar el usuario: Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials o18-20020a056870e81200b001805a3e722csm12606967oan.19 - gsmtp
+2023-05-02T21:19:39.595Z [error] Error al registrar el usuario: Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials o18-20020a056870e81200b001805a3e722csm12606967oan.19 - gsmtp
+2023-05-03T00:21:06.390Z [error] Error al enviar mensaje y emailError: Message cannot have the same To and From for account AC0d7fbed8502d0a3eb4cab5b827768956
+2023-05-03T00:21:06.393Z [error] Error al enviar mensaje y emailError: Message cannot have the same To and From for account AC0d7fbed8502d0a3eb4cab5b827768956

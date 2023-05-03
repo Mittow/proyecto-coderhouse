@@ -1,0 +1,20 @@
+extends ./layout/base.pug
+block content 
+
+    main
+        div(class="contenedor")
+            p(class="title")= `Bienvenido ${user.name} ${user.lastname} a `
+                span Netflix CLON
+            
+        div(class="contenedor-peliculas")
+            h2(class="h2-peliculas") PELICULAS y SERIES
+            ul(class="ul-peliculas")
+                each pelicula in data
+                    li(class="li-peliculas" id=`${pelicula.id}`)
+                        img(class="foto-peliculas", src=pelicula.urlImg, alt="")
+                        p(class="p-peliculas")= pelicula.title
+                        p(class="p-duration")= pelicula.duration
+                        img(src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" class="logo-delete-cart" onclick=`addToCart('${user.cartId}', '${pelicula.id}')`)
+
+    script(src="/static/js/cart.js")
+    script(src="/static/js/inicializarBadget.js")

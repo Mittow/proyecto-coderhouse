@@ -1,0 +1,21 @@
+extends ./layout/base.pug
+block content 
+
+    main 
+        div(class="contenedor-peliculas") 
+            ul(class="ul-peliculas" id="cart-list")
+                - let longitudArray = data.length
+                if data.length === 0
+                    p(class="empty-cart") No hay peliculas en el carrito
+                else 
+                    each pelicula in data
+                        li(class="li-peliculas" id=`${pelicula._id}`)
+                            img(class="foto-peliculas", src=pelicula.urlImg, alt="")
+                            p(class="p-peliculas")= pelicula.title
+                            p(class="p-duration")= pelicula.duration
+                            img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Cross_red_circle.svg/1024px-Cross_red_circle.svg.png" class="logo-delete-favorite" onclick=`removeFromCart('${user.cartId}', '${pelicula._id}')`)
+                    a(class="boton-comprar" onclick=`sendOrder('${user.cartId}')`) Concretar compra
+                
+    script(src="//cdn.jsdelivr.net/npm/sweetalert2@11")
+    script(src="/static/js/cart.js")
+    script(src="/static/js/inicializarBadget.js")

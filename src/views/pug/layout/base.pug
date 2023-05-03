@@ -1,0 +1,50 @@
+html
+    head 
+        link(
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css")
+        link(
+            rel="preconnect" 
+            href="https://fonts.googleapis.com")
+        link(
+            rel="preconnect" 
+            href="https://fonts.gstatic.com" 
+            crossorigin)
+        link(
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 
+            rel="stylesheet")
+        link(
+            rel="stylesheet" 
+            href="/static/css/style.css")
+        link(
+            rel="icon" 
+            type="image/png" 
+            href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico")
+        title= "Netflix"
+
+    body 
+        nav.uk-navbar-container#nav(uk-navbar='')
+            .uk-navbar-left
+                ul.uk-navbar-nav
+                    li 
+                        a(href="/")
+                            img(src="https://shop.diginet.pro//content/files/Diginet%20Images/BROAD%20Netflix/Netflix-DigiNet-Logo.png", class="logo-nav")
+                            span CLON
+                    li.uk
+                        a(href='/', id="a-nav") Inicio
+                    li  
+                        a(href='/buscar?categoria=series', id="a-nav") Series
+                    li
+                        a(href='/buscar?categoria=peliculas', id="a-nav") Peliculas
+                    li
+                        a(href='/chat', id="a-nav") Chat
+            .uk-navbar-right
+                ul.uk-navbar-nav
+                    li
+                        a(href='/favorites', id="a-nav") Favoritos
+                            span#cart-badge.uk-label 0
+                    li 
+                        a(href='/profile')
+                            img(class="img-user-nav" src=`https://cdn-icons-png.flaticon.com/512/709/709579.png`)
+                
+        block content

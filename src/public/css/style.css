@@ -1,0 +1,634 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.margin-top {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+body {
+    background-color: #161616;
+}
+
+.img-logo {
+    width: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+.img-user-nav {
+    height: 34px;
+    width: 34px;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 6px;
+    border: 1px solid rgb(0, 0, 0);
+    transition: .2s;
+}
+
+.logo-delete-cart{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -45px;
+    filter: invert(100);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: .2s;
+} 
+
+.logo-delete-favorite{
+    width: 35px;
+    height: 35px;
+    /* filter: invert(100); */
+    margin-top: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    margin-left: -35px;
+    position: absolute;
+    transition: .2s;
+}
+
+.logo-delete-favorite:hover{
+    filter: invert(0);
+    border: 2px solid #ffffff;
+}
+
+.logo-delete-cart:hover{
+    filter: invert(0);
+    border: 2px solid #ffffff;
+}
+
+.contenedor-profile {
+    background: rgba(19, 19, 19, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(155, 155, 155, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 10px;
+    border: 1px solid rgba(54, 54, 54, 0.18);
+    width: 350px;
+    margin: 150px 0 70px 0;
+}
+
+.perfi-img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    box-shadow: 0 1px 10px 0 rgba(155, 155, 155, 0.37);
+    left: 100;
+    top: -100px;
+    border-radius: 50%;
+    border: 1px solid rgba(54, 54, 54, 0.18);
+}
+
+.container-profile-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    justify-content: space-around;
+    background: rgba(19, 19, 19, 0.75);
+    box-shadow: 0 8px 32px 0 rgba(155, 155, 155, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 10px;
+    border: 1px solid rgba(54, 54, 54, 0.18);
+}
+
+.img-user-nav:hover {
+    filter: invert(100);
+}
+
+.uk-navbar-container {
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+#badge {
+    position: absolute;
+    top: 25;
+    right: 160;
+}
+
+.tv {
+    background-color: aliceblue;
+}
+
+#nav {
+    background-color: rgb(20, 20, 20)
+}
+
+main {
+    width: 100%;
+    background-color: #161616;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    background-color: rgb(24, 24, 24);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    transition: .3s;
+    width: 60%;
+    margin: 40px auto;
+}
+
+.contenedor:hover {
+    box-shadow: 1px 10px 25px black;
+}
+
+.title {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue';
+    margin-bottom: 0;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+span {
+    color: rgb(255, 32, 32);
+}
+
+.form-label {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#margin-top {
+    margin-top: 20px;
+
+}
+
+.boton {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px black;
+    margin: 20px auto;
+    padding: 5px 20px;
+    display: flex;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.boton:hover {
+    background-color: rgb(31, 31, 31);
+    box-shadow: 1px 1px 25px black;
+    color: rgb(255, 255, 255);
+}
+
+.contenedor-peliculas {
+    color: white;
+    margin-top: 20px;
+}
+
+.perfil-1{
+    padding-top: 40px;
+    padding: 40px 10px 10px;
+    color: white;
+}
+
+.button-cerrar{
+    background-color: white;
+    color: black;
+    margin: 40px 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.boton-comprar{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 40px 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.boton-comprar:hover{
+    background-color: rgb(236, 236, 236);
+    color: rgb(12, 12, 12);
+}
+
+.li-peliculas-confirm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.button-cerrar:hover{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    text-decoration: none;
+    
+    border-radius: 10px;
+}
+
+.ul-peliculas {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.li-peliculas {
+    list-style-type: none;
+    background-color: rgb(24, 24, 24);
+    box-shadow: 1px 1px 10px black;
+    margin: 5px;
+    transition: .3s;
+}
+
+.li-peliculas:hover {
+    box-shadow: 1px 10px 25px black;
+}
+
+.p-peliculas {
+    width: 230px;
+    font-family: 'Bebas Neue';
+    letter-spacing: 2px;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 10px;
+    text-shadow: #161616 3px 1px 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.h2-peliculas {
+    font-family: 'Bebas Neue';
+    color: #fff;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    margin-left: 2%;
+}
+
+.p-duration {
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -340px;
+    margin-left: 5px;
+    text-shadow: #161616 2px 1px 1px;
+}
+
+.foto-peliculas {
+    width: 250px;
+    height: 350px;
+    border-radius: 8px;
+}
+
+.a-category {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    background-color: rgb(24, 24, 24);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    transition: .3s;
+}
+
+.a-category:hover {
+    color: white;
+    box-shadow: 1px 10px 25px black;
+}
+
+.div-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje-h2 {
+    padding: 0 76px;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensajes {
+    display: flex;
+    flex-direction: column;
+align-items: start;
+}
+
+.logo-nav{
+    width: 100px;
+    height: auto;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linea {
+    width: 94%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto 20px;
+    opacity: 50%;
+}
+
+.input-emails {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.form-emails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.mensaje-autor {
+    color: white;
+    font-weight: bold;
+}
+
+.mensaje-fecha {
+    color: rgb(173, 173, 173);
+    width: auto;
+    margin: 0 5px;
+}
+
+.mensaje-texto {
+    color: white;
+    width: auto;
+}
+
+.div-date{
+    width: auto;
+}
+
+.mensaje-derecha {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: start;
+    align-self: flex-end;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 10px;
+    max-width: 500px;
+}
+
+.mensaje-izquierda{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: auto;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 10px;
+    max-width: 400px;
+}
+
+.mensaje-date{
+    align-self: flex-end;
+}
+
+.hide {
+    display: none;
+}
+
+.h2 {
+    margin-top: -15px;
+}
+
+.peliculas-div {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.peliculas-form {
+    margin: 10px 0;
+    padding: 0px 18px;
+    width: 100%;
+    display: flex;
+    background-color: rgb(36, 36, 36);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pelicula-img {
+    width: 200px;
+}
+
+.pelicula-titulo {
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    letter-spacing: 2px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.pelicula-t,
+.pelicula-m,
+.pelicula-d {
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    letter-spacing: 2px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.pelicula-m {
+    padding-left: 70px;
+}
+
+.pelicula-t {
+    margin-left: -15px;
+}
+
+.pelicula-duracion {
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    letter-spacing: 2px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#a-nav{
+    font-family: Helvetica;
+    color:white;
+}
+
+#a {
+    margin-right: 100px;
+    margin-top: -8px;
+}
+
+#nadaPelis {
+    margin-bottom: 10px;
+}
+
+.show {
+    display: block;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+.centrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.main-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/1ef84595-1fdb-4404-adac-15215ceeb3ae/db34337e-5f5d-4e1a-a6f9-cc1a441ce15e/AR-es-20220711-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+}
+
+.contenedor-login {
+    padding: 20px 30px;
+    width: 400px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+}
+
+#btn-login {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.contenedor-bye {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.h2-bye {
+    color: white;
+    font-size: 50px;
+}
+
+.h2-login{
+    color: white;
+    padding: 20px 0;
+}
+
+.form-group {
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.contenedor-bye {
+    padding: 20px 30px;
+    height: 10%;
+    background-color: rgb(36, 36, 36);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+#prefix {
+    width: 65px;
+    display: flex;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

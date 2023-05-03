@@ -1,0 +1,15 @@
+extends ./layout/baseLogin.pug
+block content 
+
+    main(class="main-login")
+        div(class="contenedor-login")
+            h2(class="h2-login") Inicia sesión
+            form(action="/login", method="post")
+                div(class="form-group")
+                    input(type="user" class="form-control" id="email" name="email" placeholder="Ingrese su Email" required)
+                div(class="form-group")
+                    input(type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required)
+                div(class="form-group")
+                    button(type="submit" class="btn btn-danger btn-block" id="btn-login") Iniciar sesión
+                div(class="form-group a-login")
+                    a(href="/signup" class="a-login") ¿No tienes una cuenta?

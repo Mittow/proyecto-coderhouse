@@ -1,0 +1,22 @@
+extends ./layout/base.pug
+block content 
+
+    main 
+        div(class="main-form")
+            div(class="contenedor margin-top")
+                h2(class="title") Centro de mensajes
+                div(class="linea")
+                h2(class="h2 title", id="nada") NO HAY MENSAJES
+                div(class="mensajes" id="divMensajes")
+                form(class="form-emails")
+                    div(class="form-div")
+                        div(class="form-label")
+                            input(class="input-emails", id="mensaje", name="mensaje", placeholder="Ingrese un mensaje")
+                    div
+                        button(class="boton", id="boton-mail", type="submit") Enviar
+
+    script(src="https://cdn.jsdelivr.net/npm/normalizr@3.6.2/dist/normalizr.browser.min.js")
+    script(src="/socket.io/socket.io.js")
+    script(src="/static/js/index.js")
+    script(src="/static/js/cart.js")
+    script(src="/static/js/inicializarBadget.js")

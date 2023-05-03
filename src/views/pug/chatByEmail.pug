@@ -1,0 +1,14 @@
+extends ./layout/base.pug
+block content 
+
+    main 
+        div(class="main-form")
+            div(class="contenedor margin-top")
+                h2(class="title")= `Mensajes de ${data[0].email}`
+                div(class="linea")
+                div(class="mensajes" id="divMensajes")
+                    each e in data
+                        div(class="mensaje-derecha")
+                            p(class="mensaje-autor centrar")= `${e.name} ${e.lastname}`
+                            p(class="mensaje-texto centrar")= e.message
+                            p(class="mensaje-date centrar")= e.date
