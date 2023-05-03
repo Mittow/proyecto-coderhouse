@@ -1,3 +1,3 @@
 setTimeout(() => {
-    location.replace("http://localhost:8080/login");
+    location.replace("https://proyecto-coderhouse.onrender.com/login");
 }, 2000)
